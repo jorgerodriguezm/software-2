@@ -49,6 +49,13 @@ img{width:100%;
    background-color: grey;	
 }
 
+.recomendaciones, .listado{
+	display: block;
+	margin: 14px;
+	width: auto;
+	height: auto;
+}
+
 @media screen and (max-width:600px){
 	.contenedor{	
 	background: linear-gradient(to left, #f12711,#f5af19);
