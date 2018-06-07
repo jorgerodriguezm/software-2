@@ -1,0 +1,56 @@
+
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+ 
+.clear:after {
+    clear: both;
+}
+ 
+.clear {
+    *zoom: 1;
+}
+ 
+a#pull {
+    display: none;
+}
+nav {
+    height: 40px;
+    width: 100%;
+    background: #666;
+    position: relative;
+    border-bottom: solid 1px #DDD;
+}
+ 
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+}
+ 
+nav li {
+    display: inline;
+    float: left;
+}
+ 
+nav a {
+    color: #FFF;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+}
+ 
+nav li a {
+    border-right: 1px solid #576979;
+}
+ 
+nav li:last-child a {
+    border-right: 0;
+}
+ 
+nav a:hover, nav a:active {
+    background-color: #333;
+}
