@@ -55,6 +55,16 @@ img{width:100%;
 	width: auto;
 	height: auto;
 }
+.clr{
+	clear: both;
+}
+.otros-mapas li{
+	display: inline-block;
+    float: left;
+    width: 100px;
+    text-align: center;
+    line-height: 8px;
+}
 
 @media screen and (max-width:600px){
 	.contenedor{	
@@ -73,6 +83,7 @@ img{width:100%;
 	.aside{
 		height:100px;
 	}
+	
 }
 
 
