@@ -49,11 +49,12 @@ img{width:100%;
    background-color: grey;	
 }
 
-.recomendaciones, .listado{
-	display: block;
-	margin: 14px;
-	width: auto;
-	height: auto;
+.recomendaciones h2{
+	text-align: center;
+}
+.botonesmovil{
+	padding: 10px;
+	display: none;
 }
 .clr{
 	clear: both;
@@ -65,7 +66,20 @@ img{width:100%;
     text-align: center;
     line-height: 8px;
 }
-
+@media screen and (min-width:601px){
+	.recomendaciones, .listado{
+	display: block;
+	margin: 14px;
+	width: auto;
+	height: auto;
+	}
+	.botones-movil{
+		display: none !important;
+	}
+	.suggestions{
+		display: block !important;
+	}	
+}
 @media screen and (max-width:600px){
 	.contenedor{	
 	background: linear-gradient(to left, #f12711,#f5af19);
@@ -83,9 +97,14 @@ img{width:100%;
 	.aside{
 		height:100px;
 	}
-	
+	.botones-movil{
+		padding: 10px;
+		display: block !important;
+	}
+	.suggestions{
+		display: none !important;
+	}	
 }
-
 
 
 
