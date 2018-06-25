@@ -1,56 +1,111 @@
+*{
 
-.clear:before, .clear:after {
-    content: " ";
-    display: table;
+-webkit-box-sizing: border-box;
+-moz-box-sizing:border-box;
+box-sizing: border-box;
 }
- 
-.clear:after {
-    clear: both;
+
+.menu_bar{
+  display: none;
 }
- 
-.clear {
-    *zoom: 1;
+header{
+  margin: auto;
+   width: 100%;
 }
- 
-a#pull {
-    display: none;
+header nav{
+  background: red;
+  z-index: 1000;
+  
+  padding-left: 30%;
+
 }
-nav {
-    height: 40px;
+header nav ul {
+  list-style: none;
+
+}
+header nav ul li{
+  display: inline-block;
+  position: relative;
+
+}
+header nav ul li:hover{
+  background: pink  ;
+}
+header nav ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+header nav ul li:hover .children{
+  display: block;
+}
+header nav ul li .children{
+  display: none;
+  background: black;
+
+  position: absolute;
+  z-index: 1000;
+  width: 150%;
+}
+header nav ul li .children li{
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,.5)
+}
+@media screen and (max-width:800px){
+  body{
     width: 100%;
-    background: #666;
+    padding-top:  70px;
+  }
+  .menu_bar{
+    display: block;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    background: blue;
+  }
+  .fa-align-justify{
+    float: right;
+  }
+  .menu_bar .bt-menu{
+    display: block;
+    padding: 20px;
+    color: white;
+
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  header nav{
+    width: 80%;
+    height: calc(100%-100px);
+    position: fixed;
+    right: 100%;
+    margin: 0;
+    padding-left: 0;
+
+
+  }
+  header nav ul li{
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,.5)
+  }
+  header nav ul li a {
+    display: block;
+  }
+    header nav ul li:hover .children{
+      display: none;
+  }
+  header nav ul li .children{
+    width: 100%;
     position: relative;
-    border-bottom: solid 1px #DDD;
-}
- 
-nav ul {
-    padding: 0;
-    margin: 0 auto;
-    width: 600px;
-    height: 40px;
-}
- 
-nav li {
-    display: inline;
-    float: left;
-}
- 
-nav a {
-    color: #FFF;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    line-height: 40px;
-}
- 
-nav li a {
-    border-right: 1px solid #576979;
-}
- 
-nav li:last-child a {
-    border-right: 0;
-}
- 
-nav a:hover, nav a:active {
-    background-color: #333;
+
+  }
+    header nav ul li .children li a{
+      margin-left: 20px;
+    }
+
 }

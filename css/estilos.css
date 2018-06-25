@@ -2,6 +2,10 @@
 	margin:0;
 	padding:0;
 }
+body{
+  width: 70%;
+	margin: auto;
+}
 div{
 	border:1px solid black;
 }
@@ -10,16 +14,13 @@ img{width:100%;
 }
 
 .contenedor{
-	width:70%;
+	width:100%;
 	max-width:1000px;
 	margin:auto;
-	background: -webkit-linear-gradient(to left, #3F5EFB, #FC466B); 
-	background: linear-gradient(to left, #3F5EFB, #FC466B); 
+	background: -webkit-linear-gradient(to left, #3F5EFB, #FC466B);
+	background: linear-gradient(to left, #3F5EFB, #FC466B);
 }
-.encabezado{
-	width:100%;
-	height:100px;
-}
+
 
 .articulo{
 	height:auto;
@@ -28,7 +29,7 @@ img{width:100%;
 	width:70%;
 	height:auto;
 	float:left;
-	
+
 }
 
 .imgnotas{
@@ -37,8 +38,8 @@ img{width:100%;
 }
 .nota{
 	margin-left:71%;
-	width:28%;	
-	
+	width:28%;
+
 }
 .aside{
 	height:310px;
@@ -46,7 +47,7 @@ img{width:100%;
 #mapa{
    width: 100%;
    height: 400px;
-   background-color: grey;	
+   background-color: grey;
 }
 
 .recomendaciones h2{
@@ -66,7 +67,7 @@ img{width:100%;
     text-align: center;
     line-height: 8px;
 }
-@media screen and (min-width:601px){
+@media screen and (min-width:800px){
 	.recomendaciones, .listado{
 	display: block;
 	margin: 14px;
@@ -78,20 +79,21 @@ img{width:100%;
 	}
 	.suggestions{
 		display: block !important;
-	}	
+	}
 }
-@media screen and (max-width:600px){
-	.contenedor{	
+@media screen and (max-width:800px){
+	body{
+		width: 100%;
+	}
+	.contenedor{
 	background: linear-gradient(to left, #f12711,#f5af19);
 	}
 	.totalnotas{
-		width:100%;		
+		width:100%;
 	}
-	.encabezado{
-		height:80px;
-	}
+
 	.nota{
-		width:100%;		
+		width:100%;
 		margin-left:0%;
 	}
 	.aside{
@@ -103,9 +105,5 @@ img{width:100%;
 	}
 	.suggestions{
 		display: none !important;
-	}	
+	}
 }
-
-
-
-

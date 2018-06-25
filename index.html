@@ -8,27 +8,40 @@
       <link rel="stylesheet" href="css/estilos.css">
       <link rel="stylesheet" href="css/fonts.css">
       <link rel="stylesheet" href="css/servicios.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
       <link href="/static/fontawesome/fontawesome-all.css" rel="stylesheet">
       <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
       <script src="js/jquery-1.9.1.min.js"></script>
       <script src="js/jquery.js"></script>
       <script src="js/javascript.js"></script>
+      <script src="js/menu.js"></script>
    </head>
    <body>
+
       <div class="contenedor">
-         <header class="encabezado">
-            <img src="img/im1.jpg">
-         </header>
-         <nav>
-            <ul>
-               <li><a href="#">Sección 1</a></li>
-               <li><a href="#">Sección 2</a></li>
-               <li><a href="#">Sección 3</a></li>
-               <li><a href="#">Sección 4</a></li>
-               <li><a href="#">Sección 5</a></li>
-            </ul>
-            <a id="pull" href="#">Menu</a>
-         </nav>
+        <header>
+             <div class="menu_bar">
+               <a href="#" class="bt-menu">Menu<i class="fas fa-align-justify"></i></a>
+             </div>
+             <nav>
+               <ul>
+                 <li><a href="#">Inicio</a></li>
+                 <li class="submenu">
+                   <a href="#">Mapas<i class="fas fa-angle-down"></i></a>
+                   <ul class="children">
+                       <li><a href="#">General</a></li>
+                        <li><a href="#">Refugios</a></li>
+                         <li><a href="#">Postas Medicas</a></li>
+                       <li><a href="#">Comisarias</a></li>
+                       <li><a href="#">Bomberos</a></li>
+                   </ul>
+                 </li>
+                 <li><a href="#">Blog</a></li>
+                 <li><a href="#">Contactos</a></li>
+
+               </ul>
+             </nav>
+           </header>
          <div class="main">
             <div class="slides">
                <img src="img/im1.jpg">
@@ -45,7 +58,7 @@
             </div>
             <div class="producto p2">
                <a href="https://infosil.usil.edu.pe/">
-               <img class="imagenservicios"src="img/im1.png"></a>
+               <img class="imagenservicios"src="img/61900.svg"></a>
             </div>
             <div class="producto p3">
                <a href="https://infosil.usil.edu.pe/">
@@ -78,7 +91,7 @@
                  var pos = {
                    lat: position.coords.latitude,
                    lng: position.coords.longitude
-                 };               
+                 };
                  infoWindow.setPosition(pos);
                  infoWindow.setContent('Location found.');
                  map.setCenter(pos);
@@ -88,7 +101,7 @@
                // Excepcion
                handleLocationError(false, infoWindow, map.getCenter());
                }
-               }               	
+               }
             </script>
             <script async defer
                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAoKK9VVqBJsNcLD_vYf3w7LdFZ8hiarE&callback=initMap"></script>
@@ -130,6 +143,6 @@
             });
          </script>
          <script src="js/jquery.slides.js"></script>
-      </div>
+    </div>
    </body>
 </html>
