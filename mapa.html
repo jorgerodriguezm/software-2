@@ -36,7 +36,6 @@
                if (navigator.geolocation) {
                navigator.geolocation.getCurrentPosition(function(position){
                    lat= 'https://www.google.com/maps/d/u/0/embed?mid=12qbNh2KdyHZgrGuFtmjAtcPUkeXFCX97&q='+position.coords.latitude + "," + position.coords.longitude+'&II='+position.coords.latitude + "," + position.coords.longitude;  
-                  alert(lat);
                   console.log(lat);
                   document.getElementById('mapa').src=lat;
                  }); 
