@@ -1,3 +1,15 @@
+*{
+	font-family: sans-serif;
+}
+
+h2{
+	font-family: Monserrat, sans-serif;
+}
+
+.listado{
+	font-family: Roboto, sans-serif;
+}
+
 .imagenservicios{
 	background-color: grey;
 }
@@ -43,6 +55,16 @@
 	-webkit-box-shadow: 6px 6px 10px #999;
  -moz-box-shadow: 6px 6px 10px #999;
 }
+
+.recomendaciones{
+	padding-top:8px;
+}
+
+ul > li {
+	padding: 8px;
+	text-align: center;
+}
+
 @media screen and (max-width:800px){
 	.producto{
 		width:180px;
