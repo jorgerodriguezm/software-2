@@ -16,7 +16,7 @@
    <body>
       <div class="contenedor">
          <header class="encabezado">
-            <img src="img/mapageneral.jpg">
+            <img src="img/mapacomisarias.jpg">
          </header>
          <nav>
             <ul>
@@ -29,13 +29,13 @@
             <a id="pull" href="#">Menu</a>
          </nav>         
         <div style="height:400px"> 
-            <iframe id="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=12qbNh2KdyHZgrGuFtmjAtcPUkeXFCX97" width="640" height="480"></iframe>    
+            <iframe id="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1w0HPIKb_oLwDRbhqL_l808OmwKsmfgOw" width="640" height="480"></iframe>    
             <script> 
                function geolocation() {
                // Geolocalizacion               
                if (navigator.geolocation) {
                navigator.geolocation.getCurrentPosition(function(position){
-                   lat= 'https://www.google.com/maps/d/u/0/embed?mid=12qbNh2KdyHZgrGuFtmjAtcPUkeXFCX97&q='+position.coords.latitude + "," + position.coords.longitude+'&II='+position.coords.latitude + "," + position.coords.longitude;  
+                   lat= 'https://www.google.com/maps/d/u/0/embed?mid=1w0HPIKb_oLwDRbhqL_l808OmwKsmfgOw&q='+position.coords.latitude + "," + position.coords.longitude+'&II='+position.coords.latitude + "," + position.coords.longitude;  
                   console.log(lat);
                   document.getElementById('mapa').src=lat;
                  }); 
