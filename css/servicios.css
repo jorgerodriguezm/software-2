@@ -1,44 +1,49 @@
+.imagenservicios{
+	background-color: grey;
+}
 .servicios{
-	
+
 	width:100%;
 	height:auto;
-	
+
 }
 .producto{
 	width:22%;
-	
+
 }
 .p1{
-	margin-top:30px;
+	margin-top:5%;
 	margin-left:9%;
 }
 .p2{
-	margin-top:-22.5%;
+	margin-top:-26%;
 	margin-left:39%;
 }
 .p3{
-	margin-top:-23%;
+	margin-top:-25%;
 	margin-left:69%;
 }
 .p4{
 	margin-top:5%;
-	margin-left:9%;
-	
+	margin-left:24%;
+
 }
 .p5{
-	margin-top:-22.5%;
-	margin-left:39%;
+	margin-top:-25%;
+	margin-left:54%;
+	margin-bottom: 30px;
 }
-.p6{
-	margin-bottom:30px;
-	margin-top:-23%;
-	margin-left:69%;
+.logo{
+	width: 100%;
+	height: 100%;
 }
 .imagenservicios{
 	width:100%;
 	height:100%;
+	-webkit-box-shadow: 6px 6px 10px #999;
+ -moz-box-shadow: 6px 6px 10px #999;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
 	.producto{
 		width:180px;
 		height:180px;

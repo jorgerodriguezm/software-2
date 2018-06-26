@@ -13,23 +13,31 @@ header{
    width: 100%;
 }
 header nav{
-  background: red;
+  background: black;
   z-index: 1000;
-  
+
   padding-left: 30%;
 
 }
 header nav ul {
+
   list-style: none;
 
 }
+header nav .nave {
+  margin-left: 60px;
+  margin-top: -60px;
+  list-style: none;
+
+}
+
 header nav ul li{
   display: inline-block;
   position: relative;
 
 }
 header nav ul li:hover{
-  background: pink  ;
+  background: rgba(100, 149, 237,.5)  ;
 }
 header nav ul li a{
   display: block;
@@ -53,6 +61,17 @@ header nav ul li .children li{
   border-bottom: 1px solid rgba(255,255,255,.5)
 }
 @media screen and (max-width:800px){
+  .cabecera{
+    display: none;
+    margin-left: -65px;
+  }
+  header nav .nave {
+    margin-left: 0;
+    margin-top: 0;
+    list-style: none;
+
+  }
+
   body{
     width: 100%;
     padding-top:  70px;
@@ -63,7 +82,7 @@ header nav ul li .children li{
 
     position: fixed;
     top: 0;
-    background: blue;
+    background: rgba(0, 0, 255,.8);
   }
   .fa-align-justify{
     float: right;
