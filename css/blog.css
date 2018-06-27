@@ -1,0 +1,66 @@
+#articulos{
+	padding:5%;
+	display:grid;
+	grid-template-columns: 60% 40%;
+	grid-template-areas: post1 aside1 
+						 post2 aside2
+						 post3 aside3;
+	grid-column-gap: 20px;
+  	grid-row-gap: 50px;					 
+}
+.post1{
+	grid-area: post1;
+}
+.post2{
+	grid-area: post2;	
+}
+.post3{
+	grid-area: post3;
+}
+.aside1{
+	grid-area: aside1;
+}
+.aside3{
+	grid-area: aside2;	
+}
+.aside3{
+	grid-area: aside3;
+}
+img{
+	padding-top:8px;
+}
+p{
+	padding:5px;
+}
+#post1,#post3,#aside2{
+	background-color: white;
+	padding: 6px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+	box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+}
+#calendario{
+	width: 330px;
+	height:300px;
+}
+h3{
+	text-align: center;
+
+	margin-top: 8px;
+}
+
+ul li{
+	list-style-type: none;
+	
+}
+ul li a {
+	text-decoration:none;
+	color: black;
+	margin-left: 5%;
+}
+#defensa{
+	width: 280px;
+	height: 284px;
+	margin-left:8px;
+}
